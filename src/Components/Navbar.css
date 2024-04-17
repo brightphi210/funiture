@@ -1,0 +1,76 @@
+
+.myNavBar{
+    padding: 20px 10%;
+}
+.topNav{
+    display: flex;
+}
+
+.topNav ul{
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.topNav ul li{
+    list-style: none;
+    padding-right: 20px;
+    border-right: solid red 1px ;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+}
+
+
+.bottomNav{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(220, 220, 220);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+.bottomNavRight{
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.bottomNav ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.bottomNav ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.bottomNavIcons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.bottomNavContact{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu{
+    background-color: orange;
+    color: white;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}

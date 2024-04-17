@@ -5,7 +5,9 @@ import React from 'react'
 
 const page = () => {
   return (
-    <main>page</main>
+    <div>
+        This is Product Page
+    </div>
   )
 }
 
