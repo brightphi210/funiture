@@ -1,0 +1,80 @@
+
+
+.firstSectionMain{
+    position: relative;
+}
+
+.firstSectionDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.leftAndRightDiv{
+    display: flex;
+    align-items: center;
+    padding: 20px 10%;
+}
+
+
+.leftSectionOne{
+    width: 60%;
+}
+
+
+.leftSectionOne h2{
+    font-size: 50px;
+}
+
+
+.furnDesign{
+    border-bottom: 3px solid rgb(33, 146, 33);
+    width: fit-content;
+    color: rgb(33, 146, 33);
+}
+
+.leftSectionOne p{
+    padding: 20px 0;
+    font-size: 15px;
+}
+
+
+.leftSectionOne button{
+    padding: 15px 40px;
+    font-size: 15px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.rightSectionOne{
+    width: 100%;
+}
+
+.images{
+    width: 100%;
+    height: 100%;
+}
+
+
+.dotDiv{
+    position: absolute;
+    right: 60px;
+    bottom: 50vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dotDiv p{
+    cursor: pointer;
+}

@@ -100,7 +100,7 @@ const Navbar = () => {
 
                 <div className='aboutDiv'  >
                     <h2>About Us</h2>
-                    <p className='myP' data-aos="fade-up" data-aos-duration="2000">
+                    <p className='myP' data-aos="fade-up" data-aos-duration="3000">
                         Explain to you how all this 
                         mistaken denouncing pleasure 
                         and praising pain was born and 
@@ -126,7 +126,7 @@ const Navbar = () => {
                         <p className='contactP'>info@example.com</p>
                     </div>
 
-                    <div className='iconDiv'>
+                    <div className='iconDiv' data-aos="fade-up" data-aos-duration="3000">
                         <p><FaFacebook /></p>
                         <p><FaInstagram /></p>
                         <p><FaLinkedin /></p>
