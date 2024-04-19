@@ -26,7 +26,8 @@
 .bottomNav{
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 0 20px;
+    padding-right: 0;
     background-color: rgb(220, 220, 220);
     margin-top: 20px;
     border-radius: 10px;
@@ -73,4 +74,72 @@
     align-items: center;
     display: flex;
     padding: 10px;
+    border-radius: 0  10px 10px 0;
+    cursor: pointer;
+}
+
+
+
+/* =========== Side Bar ============== */
+
+.sideBar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100vh;
+}
+
+
+.closeDiv{
+    display: flex;
+    align-items: center;
+}
+
+.closeDiv p{
+    margin-left: auto;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.aboutDiv .myP{
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+.aboutDiv button{
+    margin: 20px 0;
+    background-color: rgb(65, 157, 65);
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+
+.contactDiv{
+    padding-top: 30px;
+}
+
+.contactP{
+    color: rgb(65, 157, 65);
+    font-size: 13px;
+}
+
+.iconDiv{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+
+.iconDiv p{
+    color: orange;
+    cursor: pointer;
 }
