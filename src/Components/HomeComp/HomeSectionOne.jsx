@@ -6,6 +6,11 @@ import './HomeSectionOne.css'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { GoDotFill } from "react-icons/go";
 import { FaRegDotCircle } from "react-icons/fa";
+import { LuArmchair } from "react-icons/lu";
+import { PiArmchair } from "react-icons/pi";
+import { PiChairThin } from "react-icons/pi";
+import { IoBedOutline } from "react-icons/io5";
+import { GiDesk } from "react-icons/gi";
 
 
 const HomeSectionOne = () => {
@@ -44,54 +49,98 @@ const HomeSectionOne = () => {
         </div>
 
 
-        {showSection1 ? (
+        {showSection1 === true && 
 
-        <div className='firstSectionDiv'>
-          <div className='leftAndRightDiv'>
+          <div className='firstSectionDiv'>
+            <div className='leftAndRightDiv'>
 
-            <div className='leftSectionOne'>
-                <h2 >Unique & Stylish</h2>
-                <h2 className='furnDesign'>Furniture</h2>
-                <p>
-                  Lorem ipsum dolor sit 
-                  amet consectetur adipisicing elit.
-                  Lorem ipsum dolor sit 
-                  amet consectetur adipisicing elit. 
-                </p>
+              <div className='leftSectionOne'>
+                  <h2 >Unique & Stylish</h2>
+                  <h2 className='furnDesign'>Furniture</h2>
+                  <p>
+                    Lorem ipsum dolor sit 
+                    amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit 
+                    amet consectetur adipisicing elit. 
+                  </p>
 
-                <button>Shop Now <FaLongArrowAltRight /></button>
+                  <button>Shop Now <FaLongArrowAltRight /></button>
+              </div>
+
+              <div className='rightSectionOne'>
+                <Image src={image1}  alt='' className='images'/>
+              </div>
+            </div>
+          </div>
+        }
+        
+
+        {
+          showSection2 === true &&
+          <div className='firstSectionDiv'>
+            <div className='leftAndRightDiv'>
+
+              <div className='leftSectionOne'>
+                  <h2 >Unique & Stylish</h2>
+                  <h2 className='furnDesign'>Furniture</h2>
+                  <p>
+                    Lorem ipsum dolor sit 
+                    amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit 
+                    amet consectetur adipisicing elit. 
+                  </p>
+
+                  <button>Shop Now <FaLongArrowAltRight /></button>
+              </div>
+
+              <div className='rightSectionOne'>
+                <Image src={image2}  alt='' className='images'/>
+              </div>
+            </div>
+          </div>
+        }
+
+
+        <div className='categorySection'>
+          <h2>Choose Your Category</h2>
+
+          <div className='categoryDiv'>
+            <div className='eachCategory'>
+              <div><LuArmchair /></div>
+              <h3>Chair</h3>
+              <p><GoDotFill />25 Items Chair</p>
             </div>
 
-            <div className='rightSectionOne'>
-              <Image src={image1}  alt='' className='images'/>
+
+            <div className='eachCategory'>
+              <div><PiArmchair /></div>
+              <h3>Chair</h3>
+              <p><GoDotFill />25 Items Chair</p>
+            </div>
+
+
+            <div className='eachCategory'>
+              <div><PiChairThin /></div>
+              <h3>Chair</h3>
+              <p><GoDotFill />25 Items Chair</p>
+            </div>
+
+
+
+            <div className='eachCategory'>
+              <div><IoBedOutline /></div>
+              <h3>Chair</h3>
+              <p><GoDotFill />25 Items Chair</p>
+            </div>
+
+
+            <div className='eachCategory'>
+              <div><GiDesk /></div>
+              <h3>Chair</h3>
+              <p><GoDotFill />25 Items Chair</p>
             </div>
           </div>
         </div>
-        ) : (
-
-        <div className='firstSectionDiv'>
-          <div className='leftAndRightDiv'>
-
-            <div className='leftSectionOne'>
-                <h2 >Unique & Stylish</h2>
-                <h2 className='furnDesign'>Furniture</h2>
-                <p>
-                  Lorem ipsum dolor sit 
-                  amet consectetur adipisicing elit.
-                  Lorem ipsum dolor sit 
-                  amet consectetur adipisicing elit. 
-                </p>
-
-                <button>Shop Now <FaLongArrowAltRight /></button>
-            </div>
-
-            <div className='rightSectionOne'>
-              <Image src={image2}  alt='' className='images'/>
-            </div>
-          </div>
-        </div>
-        )}
-
         
       </div>
     </div>
