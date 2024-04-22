@@ -168,6 +168,11 @@ const HomeSectionOne = () => {
             </div>
           </div>
         </div>
+
+
+        <div>
+          
+        </div>
         
       </div>
     </div>
