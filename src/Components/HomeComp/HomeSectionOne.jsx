@@ -11,6 +11,8 @@ import { PiArmchair } from "react-icons/pi";
 import { PiChairThin } from "react-icons/pi";
 import { IoBedOutline } from "react-icons/io5";
 import { GiDesk } from "react-icons/gi";
+import banner1 from '../Images/bann1.png'
+import banner2 from '../Images/bann2.png'
 
 
 const HomeSectionOne = () => {
@@ -138,6 +140,31 @@ const HomeSectionOne = () => {
               <div><GiDesk /></div>
               <h3>Chair</h3>
               <p><GoDotFill />25 Items Chair</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div className='bannerSection'>
+          <div className='bannerDivOne'>
+            <Image src={banner1} alt='' className='bannImage'/>
+
+            <div className='banerDivOneText'>
+              <h4>UP TO 20% OFF</h4>
+              <h2>Modern & Minimal</h2>
+              <p>Don’t miss avail the saving opportunity</p>
+              <button>Shop Now </button>
+            </div>
+          </div>
+
+          <div className='bannerDivTwo'>
+            <Image src={banner2} alt='' className='bannImage'/>
+
+            <div className='banerDivTwoText'>
+              <h4>UP TO 20% OFF</h4>
+              <h2>Modern & Minimal</h2>
+              <p>Don’t miss avail the saving opportunity</p>
+              <button>Shop Now </button>
             </div>
           </div>
         </div>

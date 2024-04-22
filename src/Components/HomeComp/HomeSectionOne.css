@@ -69,7 +69,7 @@
 .dotDiv{
     position: absolute;
     right: 60px;
-    bottom: 50vh;
+    top: 300px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -127,4 +127,113 @@
 .eachCategory div{
     font-size: 60px;
     font-weight: 200;
+}
+
+
+/* ===== sectionOne three ======== */
+
+.bannerSection{
+    display: flex;
+    padding: 20px 10%;
+    gap: 20px;
+}
+
+
+.bannerDivOne{
+    width: 100%;
+    position: relative;
+}
+
+.bannImage{
+    width: 100%;
+}
+
+.bannerDivTwo{
+    width: 100%;
+}
+
+.banerDivOneText{
+    position: absolute;
+    top: 70px;
+    left: 25%;
+    text-align: center;
+    color: white;
+}
+
+.banerDivOneText h4{
+    font-size: 20px;
+}
+
+.banerDivOneText h2{
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.banerDivOneText p{
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+.banerDivOneText button{
+    font-size: 15px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+.banerDivOneText button:hover{
+    background-color: orange;
+    transition: all 0.2s ease;
+    transform: scale(1.09);
+}
+
+
+
+.bannerDivTwo{
+    position: relative;
+}
+
+.banerDivTwoText{
+    position: absolute;
+    top: 70px;
+    left: 10%;
+    text-align: left;
+}
+
+.banerDivTwoText h4{
+    font-size: 20px;
+}
+
+.banerDivTwoText h2{
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.banerDivTwoText p{
+    font-size: 15px;
+    padding: 10px 0;
+}
+
+
+.banerDivTwoText button{
+    font-size: 15px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+.banerDivTwoText button:hover{
+    background-color: orange;
+    transition: all 0.2s ease;
+    transform: scale(1.09);
 }
