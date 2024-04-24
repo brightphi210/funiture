@@ -1,5 +1,12 @@
 import React, { useState } from 'react'
 import './HomeSectionTwo.css'
+import { TiStarFullOutline } from "react-icons/ti";
+import { dataOne } from '../module';
+import { dataTwo } from '../module';
+import Image from 'next/image';
+import { MdFavoriteBorder } from "react-icons/md";
+import { FaRegEye } from "react-icons/fa6";
+import { RiShareForward2Fill } from "react-icons/ri";
 
 const HomeSectionTwo = () => {
 
@@ -39,6 +46,9 @@ const HomeSectionTwo = () => {
     }
 
 
+    // console.log(dataOne);
+    // console.log(dataTwo);
+
   return (
     <div className='homeSectionTwo'>
 
@@ -62,6 +72,216 @@ const HomeSectionTwo = () => {
                 <li onClick={handClickThree} className={showDetailsThree === true ? 'activeList' : ''}>Office Table <sup>20</sup></li>
                 <li onClick={handClickFour} className={showDetailsFour === true ? 'activeList' : ''}>Office Desk <sup>09</sup></li>
             </ul>
+
+            <div className='productDiv'>
+
+                {showDetailsOne === true && (
+                    <>
+                        {dataOne.map((firstData, index)=>(
+                            <div key={index} className='eachProduct'>
+                                <Image src={firstData.image} alt=""/>
+                                <p>{firstData.category}</p>
+                                <h2>{firstData.name}</h2>
+                                
+                                {firstData.rating === 3 && (
+
+                                    <div className='starDiv'>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                    </div>
+                                )}
+
+                                {firstData.rating === 5 && (
+
+                                    <div className='starDiv'>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                    </div>
+                                )}
+
+                                {firstData.rating === 4 && (
+
+                                <div className='starDiv'>
+                                    <p><TiStarFullOutline /></p>
+                                    <p><TiStarFullOutline /></p>
+                                    <p><TiStarFullOutline /></p>
+                                    <p><TiStarFullOutline /></p>
+                                </div>
+                                )}
+
+                                <div className='cartDiv'>
+                                    <h2>{firstData.price}</h2>
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>  
+                        ))}
+                    </>
+                )}
+
+
+                {showDetailsTwo === true && (
+                    <>
+                        {dataTwo.map((firstData, index)=>(
+                            <div key={index} className='eachProduct'>
+                                <Image src={firstData.image} alt=""/>
+                                <p>{firstData.category}</p>
+                                <h2>{firstData.name}</h2>
+                                
+                                {firstData.rating === 3 && (
+
+                                    <div className='starDiv'>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                    </div>
+                                )}
+
+                                {firstData.rating === 5 && (
+
+                                    <div className='starDiv'>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                    </div>
+                                )}
+
+                                {firstData.rating === 4 && (
+
+                                <div className='starDiv'>
+                                    <p><TiStarFullOutline /></p>
+                                    <p><TiStarFullOutline /></p>
+                                    <p><TiStarFullOutline /></p>
+                                    <p><TiStarFullOutline /></p>
+                                </div>
+                                )}
+
+                                <div className='cartDiv'>
+                                    <h2>{firstData.price}</h2>
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>  
+                        ))}
+                    </>
+                )}
+
+
+                {showDetailsThree === true && (
+                    <>
+                        {dataOne.map((firstData, index)=>(
+                            <div key={index} className='eachProduct'>
+                                <Image src={firstData.image} alt=""/>
+                                <p>{firstData.category}</p>
+                                <h2>{firstData.name}</h2>
+                                
+                                {firstData.rating === 3 && (
+
+                                    <div className='starDiv'>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                    </div>
+                                )}
+
+                                {firstData.rating === 5 && (
+
+                                    <div className='starDiv'>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                    </div>
+                                )}
+
+                                {firstData.rating === 4 && (
+
+                                <div className='starDiv'>
+                                    <p><TiStarFullOutline /></p>
+                                    <p><TiStarFullOutline /></p>
+                                    <p><TiStarFullOutline /></p>
+                                    <p><TiStarFullOutline /></p>
+                                </div>
+                                )}
+
+                                <div className='cartDiv'>
+                                    <h2>{firstData.price}</h2>
+                                    <button>Add to cart</button>
+                                </div>
+                            </div>  
+                        ))}
+                    </>
+                )}
+
+
+                {showDetailsFour === true && (
+                    <>
+                        {dataTwo.map((firstData, index)=>(
+                            <div key={index} className='eachProduct'>
+                                <Image src={firstData.image} alt=""/>
+                                <p>{firstData.category}</p>
+                                <h2>{firstData.name}</h2>
+                                
+                                {firstData.rating === 3 && (
+
+                                    <div className='starDiv'>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                    </div>
+                                )}
+
+                                {firstData.rating === 5 && (
+
+                                    <div className='starDiv'>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                        <p><TiStarFullOutline /></p>
+                                    </div>
+                                )}
+
+                                {firstData.rating === 4 && (
+
+                                <div className='starDiv'>
+                                    <p><TiStarFullOutline /></p>
+                                    <p><TiStarFullOutline /></p>
+                                    <p><TiStarFullOutline /></p>
+                                    <p><TiStarFullOutline /></p>
+                                </div>
+                                )}
+
+                                <div className='cartDiv'>
+                                    <h2>{firstData.price}</h2>
+                                    <button>Add to cart</button>
+                                </div>
+                                
+
+
+                                <div className='displayIcons showDisplayIcons'>
+                                    <div>
+                                        <MdFavoriteBorder />
+                                    </div>
+
+                                    <div>
+                                        <FaRegEye />
+                                    </div>
+
+                                    <div>
+                                        <RiShareForward2Fill />
+                                    </div>
+                                </div>
+                            </div>  
+                        ))}
+                    </>
+                )}
+            </div>
         </div>
 
 

@@ -49,3 +49,88 @@
 .activeList:hover{
     color: orange;
 }
+
+
+.productDiv{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+.eachProduct{
+    position: relative;
+    cursor: pointer;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+
+
+.eachProduct h2{
+    padding: 10px 0;
+}
+
+.cartDiv{
+    display: flex;
+}
+
+.cartDiv h2{
+    font-size: 15px;
+    color: orange;
+}
+
+.cartDiv button{
+    margin-left: auto;
+    padding: 10px 30px;
+    font-size: 13px;
+    border: solid gainsboro 1px;
+    border-radius: 5px;
+}
+
+
+.cartDiv button:hover{
+    background-color: orange;
+    color: white;
+    transition: all ease 0.5s;
+}
+
+
+.starDiv{
+    display: flex;
+    align-items: center;
+    color: orange;
+    gap: 5px;
+    padding: 10px 0;
+}
+
+.showDisplayIcons{
+    display: block;
+}
+
+.displayIcons{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: none;
+}
+
+
+.eachProduct:hover, .showDisplayIcons{
+    transition: all 0.5s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.displayIcons div{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
