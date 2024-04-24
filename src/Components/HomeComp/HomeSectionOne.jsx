@@ -13,6 +13,7 @@ import { IoBedOutline } from "react-icons/io5";
 import { GiDesk } from "react-icons/gi";
 import banner1 from '../Images/bann1.png'
 import banner2 from '../Images/bann2.png'
+import banner3 from '../Images/bann3.png'
 
 
 const HomeSectionOne = () => {
@@ -170,8 +171,18 @@ const HomeSectionOne = () => {
         </div>
 
 
-        <div>
+        <div className='bannerSection2'>
+          <Image src={banner3} alt='' className='bannerImage2'/>
           
+          
+          <div className='bannerDiv2'>
+            <h3>UP TO 20% OFF</h3>
+            <h2>New Sofa Collections</h2>
+            <p>Don’t miss avail the saving opportunity</p>
+            <button>Shop Now</button>
+          </div>
+
+
         </div>
         
       </div>

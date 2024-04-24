@@ -237,3 +237,41 @@
     transition: all 0.2s ease;
     transform: scale(1.09);
 }
+
+
+.bannerSection2{
+    margin: 20px 10%;
+    position: relative;
+}
+
+
+.bannerImage2{
+    width: 100%;
+}
+
+.bannerDiv2{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+
+.bannerDiv2 h3{
+    font-size: 20px;
+}
+
+
+.bannerDiv2 h2{
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.bannerDiv2 button{
+    background-color: black;
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    margin-top: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+}

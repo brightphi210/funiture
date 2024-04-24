@@ -1,0 +1,51 @@
+
+
+.homeSectionTwo{
+    padding: 20px 10%;
+}
+
+
+.featuredDiv{
+    display: flex;
+    align-items: center;
+}
+
+.featuredDiv h2{
+    font-size: 30px;
+}
+
+.featuredDiv p{
+    margin-left: auto;
+}
+
+.listClass{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.listClass li{
+    list-style: none;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+
+/* .listClass li:hover{
+    color: green;
+} */
+
+
+
+.activeList{
+    color: orange;
+    border-bottom: 1px solid orange;
+    font-size: 15px;
+}
+
+.activeList:hover{
+    color: orange;
+}
