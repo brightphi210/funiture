@@ -7,6 +7,13 @@ import image6 from './Images/furn/product-6.png'
 import image7 from './Images/furn/product-7.png'
 import image8 from './Images/furn/product-8.png'
 
+import imagea from './Images/furn/feat-product-1.png'
+import imageb from './Images/furn/feat-product-2.png'
+import imagec from './Images/furn/feat-product-3.png'
+import imaged from './Images/furn/feat-product-4.png'
+import imagee from './Images/furn/feat-product-5.png'
+import imagef from './Images/furn/feat-product-6.png'
+
 
 export const dataOne = [
     {   
@@ -151,4 +158,63 @@ export const dataTwo = [
         price : '$55.00'
     },
 
+]
+
+export const dataFive = [
+    {   
+        image : imagea,
+        category : 'Bottel Gaurd (Lauki)',
+        name : 'Wooden Showpiece Table',
+        rating : 3,
+        discountPrice : '$55.00',
+        price : '$95.00'
+    },
+
+    {   
+        image : imageb,
+        category : 'Bottel Gaurd (Lauki)',
+        name : 'Wooden Showpiece Table',
+        rating : 3,
+        discountPrice : '$55.00',
+        price : '$95.00'
+    },
+
+    {   
+        image : imagec,
+        category : 'Bottel Gaurd (Lauki)',
+        name : 'Wooden Showpiece Table',
+        rating : 3,
+        discountPrice : '$55.00',
+        price : '$95.00'
+    },
+
+
+    {   
+        image : imaged,
+        category : 'Bottel Gaurd (Lauki)',
+        name : 'Wooden Showpiece Table',
+        rating : 3,
+        discountPrice : '$55.00',
+        price : '$95.00'
+    },
+
+
+    {   
+        image : imagee,
+        category : 'Bottel Gaurd (Lauki)',
+        name : 'Wooden Showpiece Table',
+        rating : 3,
+        discountPrice : '$55.00',
+        price : '$95.00'
+    },
+
+
+    {   
+        image : imagef,
+        category : 'Bottel Gaurd (Lauki)',
+        name : 'Wooden Showpiece Table',
+        rating : 3,
+        discountPrice : '$55.00',
+        price : '$95.00'
+    },
 ]

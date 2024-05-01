@@ -78,7 +78,7 @@ const HomeSectionTwo = () => {
                 {showDetailsOne === true && (
                     <>
                         {dataOne.map((firstData, index)=>(
-                            <div key={index} className='eachProduct'>
+                            <div key={index} className='eachProduct' data-aos="fade-up" data-aos-duration="3000">
                                 <Image src={firstData.image} alt=""/>
                                 <p>{firstData.category}</p>
                                 <h2>{firstData.name}</h2>
@@ -126,7 +126,7 @@ const HomeSectionTwo = () => {
                 {showDetailsTwo === true && (
                     <>
                         {dataTwo.map((firstData, index)=>(
-                            <div key={index} className='eachProduct'>
+                            <div key={index} className='eachProduct' data-aos="fade-up">
                                 <Image src={firstData.image} alt=""/>
                                 <p>{firstData.category}</p>
                                 <h2>{firstData.name}</h2>
@@ -174,7 +174,7 @@ const HomeSectionTwo = () => {
                 {showDetailsThree === true && (
                     <>
                         {dataOne.map((firstData, index)=>(
-                            <div key={index} className='eachProduct'>
+                            <div key={index} className='eachProduct' data-aos="fade-up">
                                 <Image src={firstData.image} alt=""/>
                                 <p>{firstData.category}</p>
                                 <h2>{firstData.name}</h2>
@@ -222,7 +222,8 @@ const HomeSectionTwo = () => {
                 {showDetailsFour === true && (
                     <>
                         {dataTwo.map((firstData, index)=>(
-                            <div key={index} className='eachProduct'>
+                            
+                            <div key={index} className='eachProduct' data-aos="fade-up">
                                 <Image src={firstData.image} alt=""/>
                                 <p>{firstData.category}</p>
                                 <h2>{firstData.name}</h2>

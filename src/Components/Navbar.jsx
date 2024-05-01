@@ -25,6 +25,7 @@ import Image from 'next/image';
 import logo from './Images/logo.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
+import Link from 'next/link';
 
 const Navbar = () => {
 
@@ -57,16 +58,30 @@ const Navbar = () => {
                 </ul>
             </div>
 
-
             <div className='bottomNav'>
                 <Image src={logo} alt='' width={200}/>
 
                 <div className='bottomNavRight'>
                     <ul>
                         <li>Browse Category <IoIosArrowDown /></li>
-                        <li>Home <IoIosArrowDown /></li>
+                        <li className='blogDrop2'>Home <IoIosArrowDown />
+                            <div className='blogDropDown2' data-aos="fade-up" data-aos-duration="1000">
+                                <Link href={'/products'}>
+                                    <p>Blog Grid</p>
+                                </Link>
+                                
+                                <p>Blog List</p>
+                                <p>Blog Details</p>
+                            </div>
+                        </li>
                         <li>Product <IoIosArrowDown /></li>
-                        <li>Blog <IoIosArrowDown /></li>
+                        <li className='blogDrop'>Blog <IoIosArrowDown />
+                            <div className='blogDropDown' data-aos="fade-up" data-aos-duration="1000">
+                                <p>Blog Grid</p>
+                                <p>Blog List</p>
+                                <p>Blog Details</p>
+                            </div>
+                        </li>
                         <li>Pages <IoIosArrowDown /></li>
                     </ul>
 
