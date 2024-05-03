@@ -41,20 +41,36 @@
 }
 
 
-.leftSectionOne button{
-    padding: 15px 40px;
-    font-size: 15px;
-    background-color: orange;
+.slide-button {
+    position: relative;
+    overflow: hidden;
     border: none;
-    border-radius: 5px;
-    color: white;
+    background-color: orange;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
     cursor: pointer;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+    outline: none;
+  }
 
+
+.slide-button::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff6347;
+    transition: top 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  .slide-button:hover::before {
+    top: 0;
+  }
+
+  
 
 .rightSectionOne{
     width: 100%;
@@ -203,6 +219,7 @@
     top: 70px;
     left: 10%;
     text-align: left;
+    color: black;
 }
 
 .banerDivTwoText h4{

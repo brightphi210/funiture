@@ -14,6 +14,7 @@ import { GiDesk } from "react-icons/gi";
 import banner1 from '../Images/bann1.png'
 import banner2 from '../Images/bann2.png'
 import banner3 from '../Images/bann3.png'
+import Navbar from '../Navbar'
 
 
 const HomeSectionOne = () => {
@@ -31,9 +32,20 @@ const HomeSectionOne = () => {
     setShowSection1(false);
     setShowSection2(true);
   };
+
+
+  const [lightModeState, setLightModeState] = useState(true)
+    
+  const colorChangeFunc = () => {
+    setLightModeState(!lightModeState)
+  }
+
+
   return (
     <div>
-      <div className='firstSectionMain'>
+      <Navbar theColorFunc={colorChangeFunc} navBarcolor = {lightModeState}/>
+
+      <div className={lightModeState === true ? 'lightMode' : 'darkMode'}>
 
         <div className='dotDiv'>
           {showSection1 === true ? (
@@ -67,7 +79,7 @@ const HomeSectionOne = () => {
                     amet consectetur adipisicing elit. 
                   </p>
 
-                  <button>Shop Now <FaLongArrowAltRight /></button>
+                  <button className='slide-button'>Shop Now <FaLongArrowAltRight /></button>
               </div>
 
               <div className='rightSectionOne'>
@@ -181,8 +193,6 @@ const HomeSectionOne = () => {
             <p>Don’t miss avail the saving opportunity</p>
             <button>Shop Now</button>
           </div>
-
-
         </div>
         
       </div>

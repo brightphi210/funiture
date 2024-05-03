@@ -19,6 +19,7 @@ import { IoMdClose } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { IoSunnySharp } from "react-icons/io5";
 
 
 import Image from 'next/image';
@@ -27,24 +28,24 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import Link from 'next/link';
 
-const Navbar = () => {
-
+const Navbar = ({theColorFunc, navBarcolor}) => {
+    
     AOS.init();
-
+    
     const [showSideBar, setShowSideBar] = useState(false)
-
+    
     const handleShowSideBar = () => {
         setShowSideBar(true)
     }
 
-
     const handleHideSideBar = () => {
         setShowSideBar(false)
     }
+    
 
   return (
     <div>
-        <div className='myNavBar'>
+        <div className={navBarcolor === true ? 'myNavBar lightMode' : 'myNavBar darkMode'}>
 
             <div className='topNav'>
                 <p>Welcome to our Organic store</p>
@@ -54,7 +55,10 @@ const Navbar = () => {
                     <li><MdOutlineLocationOn />Washington, New York City</li>
                     <li>English <TbCaretDownFilled /></li>
                     <li>$USDC <TbCaretDownFilled /></li>
-                    <li>Dark <IoMdMoon /></li>
+                    <li onClick={theColorFunc}>{navBarcolor === true ? 'Dark' : 'Light'}
+                    {navBarcolor === true ? <IoMdMoon /> : <IoSunnySharp />}
+                    </li>
+                    
                 </ul>
             </div>
 
