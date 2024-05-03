@@ -55,9 +55,19 @@ const Navbar = ({theColorFunc, navBarcolor}) => {
                     <li><MdOutlineLocationOn />Washington, New York City</li>
                     <li>English <TbCaretDownFilled /></li>
                     <li>$USDC <TbCaretDownFilled /></li>
-                    <li onClick={theColorFunc}>{navBarcolor === true ? 'Dark' : 'Light'}
+
+                    {/* <li onClick={theColorFunc}>{navBarcolor === true ? 'Dark' : 'Light'}
                     {navBarcolor === true ? <IoMdMoon /> : <IoSunnySharp />}
-                    </li>
+                    </li> */}
+
+
+                    <div onClick={theColorFunc}>
+                        {
+                            navBarcolor === true ?
+                            <li>Dark <IoMdMoon /></li> :
+                            <li>Light <IoSunnySharp /></li>
+                        }
+                    </div>
                     
                 </ul>
             </div>
