@@ -44,7 +44,7 @@ const Navbar = ({theColorFunc, navBarcolor}) => {
     
 
   return (
-    <div>
+    <div >
         <div className={navBarcolor === true ? 'myNavBar lightMode' : 'myNavBar darkMode'}>
 
             <div className='topNav'>
@@ -73,7 +73,7 @@ const Navbar = ({theColorFunc, navBarcolor}) => {
             </div>
 
             <div className='bottomNav'>
-                <Image src={logo} alt='' width={200}/>
+                <Image src={logo} alt='' width={200} className='logo'/>
 
                 <div className='bottomNavRight'>
                     <ul>
@@ -115,6 +115,8 @@ const Navbar = ({theColorFunc, navBarcolor}) => {
                         <p className='menu' onClick={handleShowSideBar}><CgMenuGridO /></p>
                     </div>
                 </div>
+                
+                <p className='menu2' onClick={handleShowSideBar}><CgMenuGridO /></p>
             </div>
         </div>
 

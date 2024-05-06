@@ -7,7 +7,6 @@
 .topNav{
     padding: 20px 10%;
     display: flex;
-    /* background-color: white; */
 }
 
 .topNav ul{
@@ -220,4 +219,51 @@
 .iconDiv p{
     color: orange;
     cursor: pointer;
+}
+
+
+.pointer{
+    position: fixed;
+    top: 90vh;
+    right: 40px;
+    font-size: 20px;
+}
+
+
+.menu2{
+    display: none;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:768px){
+    .topNav{
+        display: none;
+    }
+
+    .bottomNav{
+        margin: 0;
+    }
+
+    .bottomNavRight{
+        display: none;
+    }
+
+    .menu2{
+        display: block;
+        margin-left: auto;
+        padding: 20px;
+        background-color: orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 25px;
+    }
+
+
+    .logo{
+        width: 150px;
+        height: 30px;
+    }
+
 }

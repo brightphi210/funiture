@@ -292,3 +292,50 @@
     font-size: 15px;
     border-radius: 5px;
 }
+
+
+@media only screen and (min-width:320px) and (max-width:768px){
+
+
+    .firstSectionDiv{
+        height: 80vh;
+        padding-top: 100px;
+    }
+    
+    .rightSectionOne{
+        display: none;
+    }
+
+    .leftAndRightDiv{
+        padding: 10px 5%;
+    }
+
+    .leftSectionOne h2{
+        font-size: 35px;
+    }
+
+    .leftSectionOne p{
+        font-size: 15px;
+    }
+
+
+    .leftSectionOne{
+        width: 100%;
+    }
+
+
+
+    .dotDiv{
+        position: absolute;
+        right: 40%;
+        top: 470px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .dotDiv p{
+        cursor: pointer;
+    }
+}

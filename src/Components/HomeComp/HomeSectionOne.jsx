@@ -63,7 +63,6 @@ const HomeSectionOne = () => {
           
         </div>
 
-
         {showSection1 === true && 
 
           <div className='firstSectionDiv'>
